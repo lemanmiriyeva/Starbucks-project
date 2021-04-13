@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Starbucks.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href="#"><img class="logo" src="https://www.freepnglogos.com/uploads/starbucks-coffee-green-logo-28.png"
+                    alt=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eos, doloribus quasi id
+                    voluptate aspernatur modi. Earum velit, maiores error laborum rem blanditiis veritatis ratione,
+                    rerum quis, alias qui ab!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png"
+                    alt="" class="starbucks">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="img1.png" alt="" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="img2.png" alt="" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="img3.png"
+                    alt="" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="https://cdn4.iconfinder.com/data/icons/social-icons-16/512/Facebook_alt-512.png"
+                        alt=""></a></li>
+            <li><a href="#"><img
+                        src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Twitter_glyph_svg-256.png"
+                        alt=""></a></li>
+            <li><a href="#"><img
+                        src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/600/Instagram_glyph_svg-256.png"
+                        alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+    document.querySelector('.starbucks').src = anything;
+}
+function changeCircleColor(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background = color;
+}
+    </script>
+
+</body>
+
+</html>
